@@ -7,28 +7,62 @@
         <meta name="description" content="Home page of the Commuity Science Museum">
         <title>Community Science Museum | Explore Together</title>
         <link href="css/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b0950db37f.js" crossorigin="anonymous"></script>
     </head>
 
-<body>
-<header>
-<nav>
-<a href="home.html"><img src= images/logo1.png alt="Logo of Community Science Museum"  class="logoimg"></a>
-
-</nav>
+<body class="container">
+<header class="hdCont"> 
+    <a href="home.html"><img src= images/logo1.png alt="Logo of Community Science Museum"  class="logoimg"></a>
+ <label for="burgerMenu"><i class="fas fa-bars"></i></label>    
+ <input type="checkbox" id="burgerMenu">
+         <nav>
+             <ul >
+                <li><a href="home.html">Home</a></li>
+                <li><a href="exhibitions.html">Explore</a></li>
+                  <li><a href="news.html">What's Happening?</a></li>
+                 <li><a href="visit.html">Visit Us</a></li>
+                <li><a href="about.html">Get Involved</a></li>
+            </ul>
+     </nav>
 </header>
 
-<main>
-<img class="imglob" src= images/lobbyimg.jpg alt="Lobby of the Community Science Museum">
-<img class="textimg" src="images/astroimg.jpg" alt="Person in spacesuit sitting in chair">
-<section class="info-1">
 
-    <h2 class="textHeaders">Visiting Professor of Aeronautics</h2>
-    <p class="textblock">It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+<img class="imglob item1" src= images/lobbyimg.jpg alt="Lobby of the Community Science Museum">
+
+<section class="item2">
+    <h1>Explore</h1>
+    <div class="imgWrap">
+    <img src="images/scikidimg.jpg" alt="Young person with virtual-reality goggles painting">
+    </div>
+      <h2 class="textHeaders">For Kids</h2>
+    <p class="textblock">Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>      
+        <h2 class="textHeaders">For Teachers</h2>
+        <p class="textblock">We give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them. </p>          
+            <h2 class="textHeaders">Researchers</h2>
+            <p class="textblock">Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. 
+                </p>
+        </section>
+
+<section class="item3">
+    <h1>What's happening?</h1>
+    <div class="imgWrap2">
+        <img class="txtimg" src="images/astroimg.jpg" alt="Person in spacesuit sitting in chair">
+    </div>
+        <h2 class="textHeaders">Visiting Professor of Aeronautics</h2>
+        <p class="textblock">It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+
+    <h1>Get involved</h1>
+    <div class="imgWrap2">
+        <img class="txtimg" src="images/libraryimg.jpg" alt="Man walking up a staircase going up three floors of a library, bookcases can be seen on all floors">
+    </div>
+    <h2 class="textHeaders">Support </h2>
+    <p class="textblock">There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.</p>
+
 </section>
-</main>
+
 
 <footer>
-    Copyright &copy;
+    Copyright &copy; Community Science Museum 2021
 </footer>
 
 
