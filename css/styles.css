@@ -1,13 +1,23 @@
-footer {
-  background-color: #a2de4a;
-  background-color: #6bb4e5;
-  background-color: black;
+/* Useful STUFF */
+
+/* STYLING */
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
-img {
-  width: 100%;
-  height: auto;
+a:hover,
+h2 {
+  text-decoration: underline;
 }
+
+ul {
+  list-style-type: none;
+}
+
+/*Header */
 
 #burgerMenu {
   display: none;
@@ -21,6 +31,15 @@ nav {
   display: block;
 }
 
+footer {
+  background-color: #224e6a;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   display: grid;
   grid-gap: 5px;
@@ -31,6 +50,8 @@ nav {
     "item3"
     "footer";
 }
+
+/* Layout */
 
 header {
   grid-area: header;
@@ -56,34 +77,23 @@ footer {
   grid-area: footer;
 }
 
-.hdCont {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logoimg {
   max-width: 66%;
 }
 
-nav li a {
-  display: block;
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  list-style-type: none;
-}
-
 h1,
 h2,
-section p {
+h3,
+footer p {
   text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  margin: auto;
 }
 
 .imgWrap,
@@ -91,6 +101,22 @@ section p {
   max-width: 66%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ftTable,
+footer p {
+  color: white;
+}
+
+/* EXPLORE/Exhibitions STYLING */
+
+.listStyling {
+  display: table;
+  margin: 0 auto;
+}
+
+.horList li {
+  display: inline;
 }
 
 @media only screen and (min-width: 768px) {
