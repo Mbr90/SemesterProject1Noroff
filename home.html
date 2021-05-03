@@ -11,20 +11,28 @@
     </head>
 
 <body>
-    <header class="headContainer"> 
+    <header class="hContainer"> 
+        <div class="hWrap">
+        <div class="hBlock-1">
         <a href="home.html"><img src= images/logo1.png alt="Logo of Community Science Museum"  class="logoimg"></a>
-     <label for="burgerMenu"><i class="fas fa-bars"></i></label>    
-     <input type="checkbox" id="burgerMenu">
-             <nav>
-                 <ul >
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="visit.html">Visit Us</a></li>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="news.html">What's Happening?</a></li>
-                    <li><a href="about.html">Get Involved</a></li>
-                </ul>
-         </nav>
-    </header>
+              </div>
+        <div class="hBlock-2">
+            <label for="burgerMenu"><i class="fas fa-bars"></i></label>  
+      </div>
+    </div> 
+    <div class="hBlock-3">
+        <input type="checkbox" id="burgerMenu">
+        <nav id="navMen">
+            <ul>
+               <li><a href="home.html" class="active">Home</a></li>
+               <li><a href="visit.html">Visit Us</a></li>
+               <li><a href="explore.html">Explore</a></li>
+               <li><a href="news.html" >What's Happening?</a></li>
+               <li><a href="about.html">Get Involved</a></li>
+           </ul>
+        </div>
+    </nav>
+     </header>
     <main>
 <img class="imglob item1" src= images/lobbyimg.jpg alt="Lobby of the Community Science Museum">
 <div class="homePromt">
@@ -65,7 +73,8 @@
 </main>
 
 <footer>
-    <div class="footerContainer"><section>
+    <div class="footerContainer">
+<section>
     <h2> CONTACT US</h2>
     <p>email@email.com</p>
     <p>+ 47 815 493 00</p>
