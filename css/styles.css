@@ -3,133 +3,6 @@
 /* Colors
 rgba(68, 150, 32, 0.4)
 /* STYLING */
-/*
-nav li a {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  color: black;
-}
-
-a:hover,
-h2 {
-  text-decoration: underline;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.homePromt {
-  background-color: #224e6a;
-}
-
-h1,
-h2 {
-  color: #449620;
-}
-
-/*Header */
-
-/*
-#burgerMenu {
-  display: none;
-}
-
-nav {
-  display: none;
-}
-
-#burgerMenu:checked ~ nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-footer {
-  background-color: #224e6a;
-}
-
-/*
-img {
-  width: 100%;
-  height: auto;
-}
-
-*/
-/* Layout */
-/*
-
-.headContainer {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(68, 150, 32, 0.4);
-}
-
-.homePromt {
-  display: flex;
-  min-height: 50px;
-  position: relative;
-  top: -5px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.homePromt button {
-  margin: auto 15px;
-}
-
-.homeContainer {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-}
-
-.homeSection {
-  display: flex;
-  flex-direction: column;
-  width: 66%;
-  margin: 0 auto;
-}
-
-.textBlock {
-  margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-footer p {
-  text-align: center;
-}
-
-th {
-  text-align: left;
-}
-
-table {
-  margin: auto;
-}
-
-.footerContainer {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
-}
-
-footer section {
-  flex: 1 1 10px;
-}
-.copy {
-  padding: 15px;
-}
-
-.ftTable,
-footer p,
-footer h2 {
-  color: white;
-}
 
 /* EXPLORE/Exhibitions STYLING */
 
@@ -137,49 +10,6 @@ footer h2 {
   display: table;
   margin: 0 auto;
 }
-/*
-.horList li {
-  display: inline;
-}
-/*
-@media only screen and (min-width: 768px) {
-  .homeContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .homeSection {
-    width: 33%;
-    padding: 5px;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-  }
-/*
-  header li {
-    float: left;
-  }
-  header li a {
-    padding: 20px 30px;
-  }
-  header nav {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  header .fa-bars {
-    display: none;
-  }
-
-  .footerContainer {
-    justify-content: center;
-  }
-}
-
-*/
 
 body {
   margin: 0;
@@ -255,6 +85,90 @@ nav a:hover {
 #burgerMenu:checked ~ #navMen ul {
   display: flex;
   flex-direction: column;
+}
+
+/* MAIN */
+
+.homePromt {
+  background-color: #224e6a;
+}
+
+h1,
+h2 {
+  color: #449620;
+}
+
+footer {
+  background-color: #224e6a;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.homePromt {
+  display: flex;
+  min-height: 50px;
+  position: relative;
+  top: -5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homePromt button {
+  margin: auto 15px;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.homeSection {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin: 0 auto;
+}
+
+.textBlock {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+footer p {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  margin: auto;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+footer section {
+  flex: 1 1 10px;
+}
+.copy {
+  padding: 15px;
+}
+
+.ftTable,
+footer p,
+footer h2 {
+  color: white;
 }
 
 /* TABLET STYLING*/
