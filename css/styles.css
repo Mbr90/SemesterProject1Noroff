@@ -181,6 +181,10 @@ footer h2 {
 
 */
 
+body {
+  margin: 0;
+}
+
 /*HEADER*/
 
 .hContainer {
@@ -193,6 +197,11 @@ footer h2 {
 
 #burgerMenu {
   display: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 ul,
@@ -236,6 +245,7 @@ nav a:hover {
 
 .hBlock-3 {
   align-items: center;
+  flex-basis: 100%;
 }
 
 #navMen ul {
@@ -244,15 +254,15 @@ nav a:hover {
 
 #burgerMenu:checked ~ #navMen ul {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 /* TABLET STYLING*/
 
 @media only screen and (min-width: 768px) {
-  /*Header Tablet*/
   #navMen ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
   }
 
