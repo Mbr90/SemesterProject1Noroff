@@ -17,11 +17,14 @@ rgba(68, 150, 32, 0.4)
   margin: 0 auto;
 }
 
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 li,
 .welcomeMessage,
 .homePromt {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 h1,
@@ -149,6 +152,7 @@ nav a:hover {
 
 .homePromt {
   background-color: #224e6a;
+  height: 6vh;
 }
 
 footer {
@@ -244,6 +248,11 @@ footer h2 {
     position: sticky;
     top: 0px;
   }
+
+  .hList li {
+    border-bottom: 1px solid black;
+    padding: 0.5vh;
+  }
 }
 
 /* TABLET STYLING*/
@@ -272,20 +281,11 @@ footer h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10vh;
-  }
-  .logoimg {
-    padding: 3vh;
-  }
-  a {
-    font-size: 1.5vw;
-  }
-  .homePromt {
-    height: 6vh;
+    height: 20%;
   }
 
-  img {
-    width: 100%;
+  a {
+    font-size: 1.5vw;
   }
 
   .hWrap {
