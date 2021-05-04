@@ -11,10 +11,16 @@ rgba(68, 150, 32, 0.4)
   margin: 0 auto;
 }
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vh;
+}
 /*HEADER*/
 
 .hContainer {
@@ -46,8 +52,8 @@ nav a:hover {
 }
 
 .active {
-  font-weight: bold;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .logoimg {
@@ -89,6 +95,24 @@ nav a:hover {
 
 /* MAIN */
 
+.welcomeStyling {
+  position: relative;
+}
+
+.welcomeMessage {
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 2vh;
+  left: 2vh;
+  font-size: 2vh;
+}
+
+.mContainer {
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .homePromt {
   background-color: #224e6a;
 }
@@ -102,10 +126,13 @@ footer {
   background-color: #224e6a;
 }
 
+/*
 img {
   width: 100%;
   height: auto;
 }
+*/
+
 .homePromt {
   display: flex;
   min-height: 50px;
@@ -115,8 +142,13 @@ img {
   align-items: center;
 }
 
-.homePromt button {
-  margin: auto 15px;
+.CTA-1,
+.CTA-2 {
+  color: white;
+  font-size: 3vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-weight: bolder;
 }
 
 .homeContainer {
@@ -151,11 +183,13 @@ table {
   margin: auto;
 }
 
+/*Footer*/
+
 .footerContainer {
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
+  padding-top: 2vh;
 }
 
 footer section {
@@ -178,6 +212,7 @@ footer h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 1vh;
   }
 
   header .fa-bars {
@@ -186,16 +221,28 @@ footer h2 {
 }
 
 /*DESKTOP STYLING*/
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1400px) {
   /* HEADER DESKTOP */
   .hContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 10vh;
+  }
+  .logoimg {
+    padding: 3vh;
+  }
+
+  .homePromt {
+    height: 6vh;
+  }
+
+  img {
+    width: 100%;
   }
 
   .hWrap {
-    flex-basis: 60%;
+    flex-basis: 35%;
   }
   .hBlock-1 {
     flex-basis: 100%;
@@ -204,7 +251,7 @@ footer h2 {
     display: none;
   }
   .hBlock-3 {
-    flex-basis: 40%;
+    flex-basis: 65%;
   }
 
   nav ul {
