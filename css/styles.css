@@ -45,7 +45,6 @@ img {
   background-color: rgba(68, 150, 32, 0.4);
   padding-left: 1vh;
   padding-right: 1vh;
-  z-index: 100;
 }
 
 #burgerMenu {
@@ -129,6 +128,10 @@ nav a:hover {
   align-items: center;
 }
 
+.brain {
+  height: 10vw;
+  width: 10vw;
+}
 .wmWrap:hover {
   background-color: black;
 }
@@ -152,7 +155,12 @@ nav a:hover {
 
 .homePromt {
   background-color: #224e6a;
-  height: 6vh;
+  height: 5vw;
+  background-image: url(../images/logoimg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 1vh 2vh;
 }
 
 footer {
@@ -172,8 +180,8 @@ footer {
 .CTA-2 {
   color: white;
   font-size: 3vh;
-  padding-left: 2vh;
-  padding-right: 2vh;
+  padding-left: 5vw;
+  padding-right: 2vw;
   font-weight: bolder;
 }
 .CTA-1:hover,
@@ -218,19 +226,21 @@ table {
 .footerContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 2vh;
 }
 
-footer section {
-  flex: 1 1 10px;
-}
 .copy {
   padding: 15px;
 }
 footer h2 {
   text-decoration: underline;
   padding-bottom: 1vh;
+}
+
+footer section,
+footer p {
+  font-size: 1.5vw;
 }
 
 footer p {
@@ -243,16 +253,26 @@ footer h2 {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
-  .hContainer {
-    position: sticky;
-    top: 0px;
-  }
+.stickyBox {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+}
 
+@media only screen and (max-width: 768px) {
   .hList li {
     border-bottom: 1px solid black;
     padding: 0.5vh;
   }
+  
+.CTA-1,
+.CTA-2 {
+  color: white;
+  font-size: 2.5vh;
+  padding-left: 4vh;
+  padding-right: 2vh;
+  font-weight: bolder;
 }
 
 /* TABLET STYLING*/
@@ -304,5 +324,10 @@ footer h2 {
   nav ul {
     flex-basis: 100%;
     justify-content: space-evenly;
+  }
+
+  footer section,
+  footer p {
+    font-size: 1.2vw;
   }
 }
