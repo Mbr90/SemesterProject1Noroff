@@ -251,6 +251,7 @@ footer p {
 footer p,
 footer h2 {
   color: white;
+  text-align: left;
 }
 
 .stickyBox {
