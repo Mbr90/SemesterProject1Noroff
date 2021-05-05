@@ -251,7 +251,10 @@ footer p {
 footer p,
 footer h2 {
   color: white;
-  text-align: left;
+}
+.ftTable,
+footer h2 {
+text-align: left;
 }
 
 .stickyBox {
