@@ -8,6 +8,9 @@ rgba(68, 150, 32, 0.4)
 
 * {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
@@ -108,7 +111,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
-
   align-items: center;
   justify-content: center;
 }
@@ -164,10 +166,6 @@ a {
   background-color: black;
 }
 
-.test {
-  visibility: hidden;
-}
-
 .welcomeMessage {
   color: white;
   padding: 1vh;
@@ -217,7 +215,8 @@ footer {
   display: flex;
   flex-direction: column;
   width: 85%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -234,9 +233,20 @@ footer {
 .homeSection h1 {
   padding-top: 2vh;
 }
-.textDec {
+
+.h1Dec {
+  margin-top: 10%;
+}
+
+.h1Dec h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.h1Dec .textDec {
   width: 50%;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .cta {
