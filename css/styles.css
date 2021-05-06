@@ -206,7 +206,8 @@ footer {
   font-weight: bolder;
 }
 
-.homeContainer {
+.homeContainer,
+.aboutMain {
   display: flex;
   flex-direction: column;
 }
@@ -236,6 +237,18 @@ footer {
 
 .h1Dec {
   margin-top: 10%;
+  text-align: center;
+}
+
+.aboutMain p {
+  width: 85%;
+}
+
+.aboutMain section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .h1Dec h1 {
@@ -274,6 +287,18 @@ footer {
   border-radius: 0px 0px 8px 8px;
 }
 
+.aboutSection2,
+.aboutSection3 {
+  background-color: rgba(68, 150, 32, 0.2);
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+
+.aboutSection2 img,
+.aboutSection3 img {
+  width: 75%;
+}
+
 .textBlock {
   margin: 0 auto;
 }
@@ -298,13 +323,17 @@ table {
 .footerContainer {
   position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  flex-direction: row;
   padding-top: 2vh;
 }
 
 .copy {
-  padding: 15px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  text-align: center;
 }
 footer h2 {
   padding-bottom: 1vh;
@@ -312,11 +341,7 @@ footer h2 {
 
 footer section,
 footer p {
-  font-size: 1.5vw;
-}
-
-footer p {
-  padding: 0.2vh;
+  font-size: 1.8vw;
 }
 
 .ftTable,
@@ -325,34 +350,30 @@ footer h2 {
   color: white;
 }
 
-.ftTable,
-footer h2 {
+footer section {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+footer p {
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
-
-footer {
-  position: relative;
-}
-
-/*
 
 .sMediaIcons {
-  position: absolute;
   display: flex;
   flex-direction: row;
-  bottom: 20%;
-  left: 2.5%;
-  z-index: 1500;
-  justify-content: space-evenly;
   align-items: center;
-  border: 5px solid yellow;
-}
-.sMediaIcons img {
-  width: 100%;
-  border: 2px solid black;
+  height: 90%;
 }
 
-*/
+.sMediaIcons img {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 @media only screen and (max-width: 768px) {
   .hList li {
