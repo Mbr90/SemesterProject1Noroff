@@ -53,7 +53,10 @@ img {
   width: auto;
 }
 
-
+.thxSection {
+  padding: 10px;
+  margin: 20px;
+}
 
 h1,
 h2,
@@ -62,7 +65,8 @@ footer p,
 .copy,
 .homeSection,
 .h1Dec,
-.visitMain {
+.visitMain,
+.thxSection {
   text-align: center;
 }
 
@@ -301,7 +305,9 @@ footer {
 .visitMain section,
 .formStyling,
 footer section,
-.hContainer   {
+.hContainer,
+.thxMain,
+.thxFlex   {
   display: flex;
   flex-direction: column;
 }
@@ -323,7 +329,8 @@ footer section,
 }
 
 .visitMain,
-.exploreMain {
+.exploreMain,
+.thxMain {
   align-items: center;
   justify-content: center;
 }
@@ -450,6 +457,7 @@ footer section,
   border-radius: 0px 0px 8px 8px;
 }
 
+
 .aboutSection2,
 .aboutSection3,
 .newsMain section,
@@ -459,7 +467,8 @@ footer section,
 .exploreSection2,
 .exploreSection3,
 .exploreSection4,
-.exploreSection5 {
+.exploreSection5,
+.thxSection {
   background-color: rgba(68, 150, 32, 0.2);
   padding-bottom: 5%;
 }
@@ -538,6 +547,7 @@ table {
   flex-direction: row;
   padding-top: 10px;
   margin-top: 50px;
+  bottom: 0px;
 }
 
 .copy {
@@ -582,6 +592,8 @@ footer p {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   .hList li {
