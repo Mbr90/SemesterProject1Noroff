@@ -34,6 +34,7 @@
            </ul>
         </div>
     </nav>
+
      </header>
     </div>
 <main class="visitMain">
@@ -65,9 +66,29 @@
 
     <section class="visitSection3">
         <h2>BOOK A GUIDED TOUR</h2>
-
-        <!-- Lag en form for booking -->
-
+        <div class="formStyling">
+        <form action="submit-php" method="POST">
+            <label for="firstname">First Name:</label>
+            <input id="firstname" placeholder="Enter your First Name" type="text" name="firstname">
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" placeholder="Enter your Last Name" type="text" name="lastname">
+            <label for="email">Email:</label>
+            <input id="email" placeholder="Enter your Email" type="text" name="email">
+            <label for="phone">Phone:</label>
+            <input id="phone" placeholder="Enter your Phone Number" type="text" name="phone">
+            <label for="participants">Participants:</label>
+            <select id="participants" name="participants">
+                <option value="1-4">1-4</option>
+                <option value="5-9">5-9</option>
+                <option value="10-14">10-14</option>
+                <option value="15-19">15-19</option>
+                <option value="20+">20+</option>
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <button class="cta"><a href="submit.html">Submit</a></button>    
+        </form>
+    </div>
     </section>
     <section class="visitSection4">
         <img class="iconImg" src="images/wheel.svg" alt="Racoon graphic">
@@ -80,8 +101,6 @@
         <img class="txtimg" src="images/bakery.jpg" alt="Baked goods at a bakery">
         <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
     </section>
-    
-
 </main>
 <footer>
     <div class="footerContainer">
@@ -117,8 +136,5 @@
     </div>   
     <p class="copy"> &copy; 2021 Community Science Museum. All Rights Reserved</p>
     </footer>
-
-
-
 </body>
 </html>
