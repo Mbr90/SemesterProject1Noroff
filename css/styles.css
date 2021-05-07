@@ -86,6 +86,7 @@ input[type="radio"]:checked+label {
   text-decoration: underline;
 }
 
+
 .homeSection p,
 th,
 .aboutSection2,
@@ -445,10 +446,10 @@ footer section,
   background-color: #449620;
   border-color: #449620;
   border-radius: 8px;
-  width: 180px;
-  height: 30px;
+  width: 160px;
+  height: 35px;
   margin: auto;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 2rem;
 }
 
@@ -692,7 +693,7 @@ grid-column: 3/4;
 .hGrid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 60px;
 }
 
 .hg2-1,
@@ -718,6 +719,10 @@ grid-column: 3/4;
   font-size: 1.6rem;
   }
 
+  .hSecStyling {
+display: flex;
+flex-direction: column;
+  }
 
 
 
