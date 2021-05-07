@@ -63,6 +63,17 @@ main h2 {
   text-decoration: underline;
 }
 
+th,
+.aboutSection2,
+.aboutSection3,
+.newsMain section,
+.visitSection1,
+.visitSection4,
+form,
+footer p {
+  text-align: left;
+}
+
 /*HEADER*/
 .stickyBox {
   position: sticky;
@@ -245,10 +256,6 @@ footer {
   margin-top: 10%;
 }
 
-.aboutMain p,
-.newsMain p {
-  width: 85%;
-}
 
 .visitMain p {
   width: 75%;
@@ -257,21 +264,68 @@ footer {
 .aboutMain section,
 .newsMain section,
 .visitMain section,
-.exploreMain section {
-  display: flex;
-  flex-direction: column;
+.exploreMain
+ {
   justify-content: center;
   align-items: center;
 }
 
 .visitMain section {
-  width: 85%;
   margin: 5% 0;
 }
 
-.exploreMain section {
+.aboutMain p,
+.newsMain p
+.visitMain section ,
+.visitMain p,
+.exploreMain section p {
   width: 85%;
 }
+.exploreMain section p {
+  margin: auto;
+}
+
+.exploreSection1,
+.exploreSection2,
+.exploreSection3,
+.exploreSection4,
+.exploreSection5 {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.exploreSection1 p,
+.exploreSection2 p,
+.exploreSection3 p,
+.exploreSection4 p,
+.exploreSection5 p {
+  grid-column: 1 / 3;
+  grid-row: 1/2;
+  padding: 10px;
+}
+
+.exploreMain h2 {
+  margin-bottom: 0;
+}
+
+.eximg,
+.eximg2 {
+  width: 90%;
+}
+
+.eximg {
+  justify-self: end;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.eximg2 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+
 
 .visitSection2 iframe {
   width: 100%;
@@ -325,7 +379,6 @@ footer {
 .exploreSection5 {
   background-color: rgba(68, 150, 32, 0.2);
   padding-bottom: 5%;
-  text-align: left;
 }
 
 .formStyling {
@@ -345,7 +398,6 @@ padding-top: 5%;
 display:grid;
  grid-template-columns:1fr 2fr ;
  grid-gap: 20px;
- text-align: left;
  width: 90%;
 }
 
@@ -395,9 +447,7 @@ footer p,
   text-align: center;
 }
 
-th {
-  text-align: left;
-}
+
 
 table {
   margin: auto;
@@ -410,7 +460,8 @@ table {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  padding-top: 2vh;
+  padding-top: 10px;
+  margin-top: 50px;
 }
 
 .copy {
@@ -441,7 +492,6 @@ footer section {
   align-items: center;
 }
 footer p {
-  text-align: left;
   padding: 0;
   margin: 0;
 }
