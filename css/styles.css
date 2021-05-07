@@ -58,6 +58,10 @@ img {
   margin: 20px;
 }
 
+.h1Dec {
+  margin-bottom: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -704,15 +708,15 @@ grid-column: 3/4;
 }
 
 
-.hGrid1 h1,
-.hGrid2 h1 {
-  font-size: 1.6rem;
-}
 
 .homeVR,
 .hGrid1  {
   width: 70%;
 }
+
+.homeContainer h1 {
+  font-size: 1.6rem;
+  }
 
 
 
@@ -755,4 +759,11 @@ grid-column: 3/4;
   footer p {
     font-size: 1.2vw;
   }
+
+  
+.homeContainer h1 {
+font-size: 2.4rem;
+}
+
+  
 }
