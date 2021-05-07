@@ -15,7 +15,7 @@ body {
   padding: 0;
 }
 
-.listStyling {
+.listStyling, {
   display: table;
   margin: 0 auto;
 }
@@ -53,13 +53,26 @@ img {
   width: auto;
 }
 
+h1,
+h2,
+h3,
+footer p,
+.copy,
+.homeSection,
+.h1Dec,
+.visitMain {
+  text-align: center;
+}
+
+
 nav a:hover,
 .CTA-1:hover,
 .CTA-2:hover,
 footer h2,
 .active,
 .homeContainer h2,
-main h2 {
+main h2,
+input[type="radio"]:checked+label {
   text-decoration: underline;
 }
 
@@ -148,6 +161,67 @@ a {
 
 /* MAIN */
 
+
+/* Explore Site */
+
+.magic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+
+}
+
+#q1{
+  grid-column: 1/2 ;
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+#q2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+}
+
+#q3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+
+
+.magic section {
+  grid-column: 1/4;
+
+}
+
+.exploreMain input {
+  display: none;
+}
+
+.test {
+  display:none;
+}
+
+.magic label {
+  opacity: 0.5;
+  color: #449620;
+}
+
+#t1:checked ~ #kids,
+#t2:checked ~ #teachers,
+#t3:checked ~ #researchers {
+  display: block;
+}
+
+
+
+input[type="radio"]:checked+label {
+  opacity: 1;
+}
+
+
+/* Some other comment */
 .welcomeStyling {
   position: relative;
 }
@@ -436,16 +510,6 @@ form button {
   margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-footer p,
-.copy,
-.homeSection,
-.h1Dec,
-.visitMain  {
-  text-align: center;
-}
 
 
 
