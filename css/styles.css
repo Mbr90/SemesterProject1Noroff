@@ -281,7 +281,8 @@ main section {
   margin-bottom: 20px;
 }
 
-.exploreMain section {
+.exploreMain section,
+.visGridContainer {
   padding-bottom: 20px;
 }
 
@@ -586,10 +587,16 @@ footer section {
   width: 60%;
 }
 
+/* Small screen specific styling */
+
 @media only screen and (max-width: 768px) {
   .hList li {
     border-bottom: 1px solid black;
     padding: 5px;
+  }
+
+  .aboutMain section {
+    padding-bottom: 20px;
   }
 
   iframe {
@@ -597,6 +604,8 @@ footer section {
     height: 65vw;
   }
 }
+
+/* Avoid breaking layout on really small screens */
 
 @media only screen and (max-width: 359px) {
   form {
@@ -606,7 +615,7 @@ footer section {
   }
 }
 
-/* TABLET STYLING*/
+/*//////////////////// TABLET SPECIFIC STYLING \\\\\\\\\\\\\\\\\\\\ */
 
 @media only screen and (min-width: 768px) {
   /*Header*/
@@ -803,7 +812,8 @@ footer section {
   }
 }
 
-/*DESKTOP STYLING*/
+/*//////////////////// DESKTOP SPECIFIC STYLING \\\\\\\\\\\\\\\\\\\\ */
+
 @media only screen and (min-width: 1400px) {
   p {
     font-size: 18px;
