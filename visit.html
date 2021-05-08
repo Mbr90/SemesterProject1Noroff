@@ -1,161 +1,218 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Home page of the Commuity Science Museum">
-        <title>Visit Us | Community Science Museum</title>
-        <script src="https://kit.fontawesome.com/b0950db37f.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of the Commuity Science Museum">
+    <title>Visit Us | Community Science Museum</title>
+    <script src="https://kit.fontawesome.com/b0950db37f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
 <body>
-    <div class ="stickyBox">
-    <header class="hContainer"> 
-        <div class="hWrap">
-        <div class="hBlock-1">
-        <a href="index.html"><img src= images/logo1.png alt="Logo of Community Science Museum"  class="logoimg"></a>
-              </div>
-        <div class="hBlock-2">
-            <label for="burgerMenu"><i class="fas fa-bars"></i></label>  
-      </div>
-    </div> 
-    <div class="hBlock-3">
-        <input type="checkbox" id="burgerMenu">
-        <nav id="navMen">
-            <ul class="hList">
-                <li><a href="index.html" >HOME</a></li>
-                <li><a href="visit.html" class="active">VISIT US</a></li>
-                <li><a href="explore.html">EXPLORE</a></li>
-                <li><a href="news.html" >WHAT'S HAPPENING?</a></li>
-                <li><a href="about.html">GET INVOLVED</a></li>
-           </ul>
+    <div class="stickyBox">
+        <header class="hContainer">
+            <div class="hWrap">
+                <div class="hBlock-1">
+                    <a href="index.html"><img src=images/logo1.png alt="Logo of Community Science Museum"
+                            class="logoimg"></a>
+                </div>
+                <div class="hBlock-2">
+                    <label for="burgerMenu"><i class="fas fa-bars"></i></label>
+                </div>
+            </div>
+            <div class="hBlock-3">
+                <input type="checkbox" id="burgerMenu">
+                <nav id="navMen">
+                    <ul class="hList">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="visit.html" class="active">VISIT US</a></li>
+                        <li><a href="explore.html">EXPLORE</a></li>
+                        <li><a href="news.html">WHAT'S HAPPENING?</a></li>
+                        <li><a href="about.html">GET INVOLVED</a></li>
+                    </ul>
+            </div>
+            </nav>
+
+        </header>
+    </div>
+    <main class="visitMain">
+        <div class="h1Dec">
+            <h1>VISIT US</h1>
+            <img class="textDec" src="images/logostrek.svg" alt="Header styling: Blue and Green brain graphic">
         </div>
-    </nav>
-
-     </header>
-    </div>
-<main class="visitMain">
-    <div class="h1Dec">
-        <h1>VISIT US</h1>
-        <img class="textDec" src="images/logostrek.svg" alt="Header styling: Blue and Green brain graphic">
-        </div>
-    <section class="visitSection1">
-        <div class="visGridWrapper">
-            <div class="visGridContainer">
-        <h2>ADMISSION</h2>
-        <h3>The entrance is free for all</h3>
-        <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
-        <p>If you would like to organise a guide tour for your group of 6 or more people, please contact us to arrange the tour</p>
-    </div>
-    <div class="visGridContainer">
-       <h2>OPENING HOURS</h2>
-        <table>
-            <tr><th>Monday:</th><td>Closed</td></tr>
-            <tr><th>Tuesday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Wednesday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Thursday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Friday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Saturday:</th><td>9:00 - 16:00</td></tr> 
-            <tr><th>Sunday</th><td>9:00 - 13:00</td></tr>
-        </table>
-    </div>
-    </div>
-    </section>
-    <section class="visitSection2">
-        <h2>LOCATION</h2>
-        <p>Oslo, Osloveien 2, 0102, Norway</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7524478640742!2d10.769602643143333!3d59.919655689428104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e92605fd3231e9a!2sOslo!5e0!3m2!1sno!2sno!4v1620146444921!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <section class="visitSection3">
-        <h2>BOOK A GUIDED TOUR</h2>
-        <div class="formStyling">
-        <form action="submit-php" method="POST">
-            <label for="firstname">First Name:</label>
-            <input id="firstname" placeholder="Enter your First Name" type="text" name="firstname">
-            <label for="lastname">Last Name:</label>
-            <input id="lastname" placeholder="Enter your Last Name" type="text" name="lastname">
-            <label for="email">Email:</label>
-            <input id="email" placeholder="Enter your Email" type="text" name="email">
-            <label for="phone">Phone:</label>
-            <input id="phone" placeholder="Enter your Phone Number" type="text" name="phone">
-            <label for="participants">Participants:</label>
-            <select id="participants" name="participants">
-                <option value="1-4">1-4</option>
-                <option value="5-9">5-9</option>
-                <option value="10-14">10-14</option>
-                <option value="15-19">15-19</option>
-                <option value="20+">20+</option>
-                </select>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">  
-        </form>
-        <button class="cta"><a href="thanks.html">Submit</a></button>  
-    </div>
-    </section>
-    <section class="visitSection4">
-        <div class="visGridWrapper">
-           
-
-      
-            <img
-            class="iconImg visGitem0"
-            src="images/wheel.svg"
-            alt="Racoon graphic"
-          />
-        <h2 class="visGitem1">ACCESSIBILITY</h2>
-        <p class="visGitem2">The museum has wheelchair accessibility ramps. It also has audio guides and braile display signs for the visually impaired.</p>
-     
-
-        
-        <h2 class="visGitem3">SHOP</h2>
-        <img class="txtimg visGitem4" src="images/purchase.jpg" alt="Woman with red apron holding roses, shop shelves in background">
-        <p class="visGitem5">Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you've left the museum</p>
-
-
-        <h2 class="visGitem6">FOOD AND DRINK</h2>
-        <img class="txtimg visGitem7" src="images/bakery.jpg" alt="Baked goods at a bakery">
-        <p class="visGitem8">There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
-   
-    </div>
-    </section>
-</main>
-<footer>
-    <div class="footerContainer">
-        <section class="fContactSection">
-        <h2> CONTACT US</h2>
-        <p>email@email.com</p>
-        <p>+ 47 815 493 00</p>
-       <div class="sMediaIcons">
-            <a href="https://www.facebook.com/"> <img class="sIcon-1" src="images/FB.png" alt="Facebook Icon"></a>
-            <a href="https://twitter.com/twitter"> <img class="sIcon-2" src="images/twitter.png" alt="Twitter Icon"></a>
-            <a href="https://www.instagram.com/"> <img class="sIcon-3" src="images/insta.png" alt="Instagram Icon"></a>
-            <a href="index.html"> <img class="sIcon-4" src="images/logoimg1.png" alt="Community Science Museum Icon"></a>
-        </div>
+        <section class="visitSection1">
+            <div class="visGridWrapper">
+                <div class="visGridContainer">
+                    <h2>ADMISSION</h2>
+                    <h3>The entrance is free for all</h3>
+                    <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and
+                        include a handy printed guide of the museum.</p>
+                    <p>If you would like to organise a guide tour for your group of 6 or more people, please contact us
+                        to arrange the tour</p>
+                </div>
+                <div class="visGridContainer">
+                    <h2>OPENING HOURS</h2>
+                    <table>
+                        <tr>
+                            <th>Monday:</th>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <th>Tuesday:</th>
+                            <td>10:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <th>Wednesday:</th>
+                            <td>10:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <th>Thursday:</th>
+                            <td>10:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <th>Friday:</th>
+                            <td>10:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <th>Saturday:</th>
+                            <td>9:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <th>Sunday</th>
+                            <td>9:00 - 13:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </section>
-    <section>
-        <h2>LOCATION</h2>
-        <p>Osloveien 2,</p>
-        <p>0102 Oslo,</p>
-        <p>Norway</p>
-    </section>
-    <section class="footHours">
-        <h2> OPENING HOURS</h2>    
-        <table class="ftTable">
-            <tr><th>Monday:</th><td>Closed</td></tr>
-            <tr><th>Tuesday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Wednesday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Thursday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Friday:</th><td>10:00 - 16:00</td></tr>
-            <tr><th>Saturday:</th><td>9:00 - 16:00</td></tr>
-            <tr><th>Sunday</th><td>9:00 - 13:00</td></tr>
-        </table>
-    </section>
-    </div>   
-    <p class="copy"> &copy; 2021 Community Science Museum. All Rights Reserved</p>
+        <section class="visitSection2">
+            <h2>LOCATION</h2>
+            <p>Oslo, Osloveien 2, 0102, Norway</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7524478640742!2d10.769602643143333!3d59.919655689428104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e92605fd3231e9a!2sOslo!5e0!3m2!1sno!2sno!4v1620146444921!5m2!1sno!2sno"
+                width="100%" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!--width="600" height="450"-->
+
+        <section class="visitSection3">
+            <h2>BOOK A GUIDED TOUR</h2>
+            <div class="formStyling">
+                <form action="submit-php" method="POST">
+                    <label for="firstname">First Name:</label>
+                    <input id="firstname" placeholder="Enter your First Name" type="text" name="firstname">
+                    <label for="lastname">Last Name:</label>
+                    <input id="lastname" placeholder="Enter your Last Name" type="text" name="lastname">
+                    <label for="email">Email:</label>
+                    <input id="email" placeholder="Enter your Email" type="text" name="email">
+                    <label for="phone">Phone:</label>
+                    <input id="phone" placeholder="Enter your Phone Number" type="text" name="phone">
+                    <label for="participants">Participants:</label>
+                    <select id="participants" name="participants">
+                        <option value="1-4">1-4</option>
+                        <option value="5-9">5-9</option>
+                        <option value="10-14">10-14</option>
+                        <option value="15-19">15-19</option>
+                        <option value="20+">20+</option>
+                    </select>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </form>
+                <button class="cta"><a href="thanks.html">Submit</a></button>
+            </div>
+        </section>
+        <section class="visitSection4">
+            <div class="visGridWrapper">
+
+
+
+                <img class="iconImg visGitem0" src="images/wheel.svg" alt="Wheelchair graphic" />
+                <h2 class="visGitem1">ACCESSIBILITY</h2>
+                <p class="visGitem2">The museum has wheelchair accessibility ramps. It also has audio guides and braile
+                    display signs for the visually impaired.</p>
+
+
+
+                <h2 class="visGitem3">SHOP</h2>
+                <img class="txtimg visGitem4" src="images/purchase.jpg"
+                    alt="Woman with red apron holding roses, shop shelves in background">
+                <p class="visGitem5">Our shop offers a range of memorabilia from the museum as well as great gifts and
+                    activity packs that allow you to continue to explore science even after you've left the museum</p>
+
+
+                <h2 class="visGitem6">FOOD AND DRINK</h2>
+                <img class="txtimg visGitem7" src="images/bakery.jpg" alt="Baked goods at a bakery">
+                <p class="visGitem8">There is a café attached to the museum where you can get light lunches, soft
+                    drinks, coffee, snacks and more.</p>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <section class="fContactSection">
+                <h2> CONTACT US</h2>
+                <p>email@email.com</p>
+                <p>+ 47 815 493 00</p>
+                <div class="sMediaIcons">
+                    <a href="https://www.facebook.com/"> <img class="sIcon-1" src="images/FB.png"
+                            alt="Facebook Icon"></a>
+                    <a href="https://twitter.com/twitter"> <img class="sIcon-2" src="images/twitter.png"
+                            alt="Twitter Icon"></a>
+                    <a href="https://www.instagram.com/"> <img class="sIcon-3" src="images/insta.png"
+                            alt="Instagram Icon"></a>
+                    <a href="index.html"> <img class="sIcon-4" src="images/logoimg1.png"
+                            alt="Community Science Museum Icon"></a>
+                </div>
+            </section>
+            <section>
+                <h2>LOCATION</h2>
+                <p>Osloveien 2,</p>
+                <p>0102 Oslo,</p>
+                <p>Norway</p>
+            </section>
+            <section class="footHours">
+                <h2> OPENING HOURS</h2>
+                <table class="ftTable">
+                    <tr>
+                        <th>Monday:</th>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday:</th>
+                        <td>10:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday:</th>
+                        <td>10:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday:</th>
+                        <td>10:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <th>Friday:</th>
+                        <td>10:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday:</th>
+                        <td>9:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>9:00 - 13:00</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <p class="copy"> &copy; 2021 Community Science Museum. All Rights Reserved</p>
     </footer>
 </body>
+
 </html>

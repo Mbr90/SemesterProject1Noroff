@@ -1,10 +1,8 @@
-/* Useful STUFF */
-
-/* Colors
-rgba(68, 150, 32, 0.4)
-/* STYLING */
-
-/* EXPLORE/Exhibitions STYLING */
+/* 
+StyleSheet for Community Science Museum
+Author: Mats Brattland
+Version: 1
+*/
 
 * {
   box-sizing: border-box;
@@ -15,33 +13,7 @@ body {
   padding: 0;
 }
 
-.listStyling {
-  display: table;
-  margin: 0 auto;
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-}
-
-h1,
-h2 {
-  color: #449620;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.25em;
-}
+/* General Image Styling */
 
 img {
   width: 100%;
@@ -53,19 +25,80 @@ img {
   width: auto;
 }
 
-.thxSection {
-  padding: 10px;
-  margin: 20px;
+.logoimg {
+  max-width: 90%;
 }
 
-.h1Dec {
-  margin-bottom: 20px;
+.aboutSection2 img,
+.aboutSection3 img,
+.visitMain img {
+  width: 75%;
+}
+
+.newsSection1 img,
+.newsSection2 img,
+.newsSection3 img {
+  width: 85%;
+}
+
+.eximg,
+.eximg2 {
+  width: 90%;
+}
+
+/* Font-Family */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Font Sizes */
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.25em;
 }
 
 h1,
+h2 {
+  font-weight: 600;
+}
+.CTA-1,
+.CTA-2 {
+  font-size: 20px;
+}
+
+footer section,
+footer p,
+.welcomeMessage {
+  font-size: 1.8vw;
+}
+
+.cta {
+  font-size: 20px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.cta:hover,
+.CTA-1,
+.CTA-2 {
+  font-weight: bolder;
+}
+
+/* Text alignment and decoration */
+h1,
 h2,
 h3,
-footer p,
 .copy,
 .homeSection,
 .h1Dec,
@@ -73,17 +106,6 @@ footer p,
 .thxSection,
 .visGridContainer {
   text-align: center;
-}
-
-nav a:hover,
-.CTA-1:hover,
-.CTA-2:hover,
-footer h2,
-.active,
-.homeContainer h2,
-main h2,
-input[type="radio"]:checked + label {
-  text-decoration: underline;
 }
 
 .homeSection p,
@@ -98,22 +120,95 @@ footer p {
   text-align: left;
 }
 
-/*HEADER*/
-.stickyBox {
-  position: sticky;
-  top: 0px;
-  background-color: white;
-  z-index: 100;
+nav a:hover,
+.CTA-1:hover,
+.CTA-2:hover,
+footer h2,
+.active,
+.homeContainer h2,
+main h2,
+input[type="radio"]:checked + label {
+  text-decoration: underline;
+}
+
+ul,
+a {
+  text-decoration: none;
+}
+
+/* COLORS */
+
+.wmWrap {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hContainer {
   background-color: rgba(68, 150, 32, 0.4);
-  padding-left: 1vh;
-  padding-right: 1vh;
 }
 
-#burgerMenu {
-  display: none;
+.hSecStyling,
+.aboutSection2,
+.aboutSection3,
+.newsMain section,
+.visitSection1,
+.visitSection4,
+.exploreSection1,
+.exploreSection2,
+.exploreSection3,
+.exploreSection4,
+.exploreSection5,
+.thxSection {
+  background-color: rgba(68, 150, 32, 0.2);
+}
+
+.cta {
+  background-color: #449620;
+}
+
+.homePromt,
+footer {
+  background-color: #224e6a;
+}
+
+.wmWrap:hover {
+  background-color: black;
+}
+
+.stickyBox {
+  background-color: white;
+}
+
+iframe {
+  border-color: rgba(68, 150, 32, 0.4);
+}
+
+h1,
+h2,
+.magic label {
+  color: #449620;
+}
+
+ul,
+a {
+  color: black;
+}
+
+.CTA-1,
+.CTA-2,
+.cta a,
+.welcomeMessage {
+  color: white;
+}
+
+/* Paddings, margins and width */
+
+.hContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.listStyling {
+  margin: 0 auto;
 }
 
 ul {
@@ -121,27 +216,143 @@ ul {
   padding-left: 0;
 }
 
+.welcomeMessage {
+  padding: 1.5%;
+}
+
+.h1Dec .textDec,
+.h1Dec h1 {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  padding: 30px;
+}
+
+.CTA-1,
+.CTA-2 {
+  margin-left: 60px;
+  margin-right: 30px;
+}
+
+.cta a,
+.exploreMain section p,
+table {
+  margin: auto;
+}
+
+.cta,
+.homeSection,
+.homeSection img,
+.visitSection2,
+.aboutMain section p,
+.newsMain section p,
+.visitMain section p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homePromt {
+  padding: 10px 10px;
+  margin-top: -5px;
+}
+
+main .h1Dec {
+  margin-top: 40px;
+}
+
+main section,
+.iconImg,
+.homeVR,
+.formStyling button {
+  margin-top: 20px;
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+.cta {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.exploreMain section {
+  padding-bottom: 20px;
+}
+
+p {
+  padding: 10px;
+}
+
+.textBlock {
+  margin: 0 auto;
+}
+
+footer h2 {
+  padding-bottom: 10px;
+}
+
+.copy {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
+.sMediaIcons img {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.thxSection {
+  padding: 10px;
+  margin: 20px;
+}
+
+.h1Dec .textDec {
+  width: 50%;
+}
+
+.homeSection,
+.aboutMain p,
+.newsMain p,
+.visitMain section,
+.visitMain p,
+.exploreMain section p {
+  width: 85%;
+}
+
+/*//////////////////// HEADER \\\\\\\\\\\\\\\\\\\\ */
+
+.listStyling {
+  display: table;
+}
+.stickyBox {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+#burgerMenu {
+  display: none;
+}
+
 ul,
 a {
   list-style: none;
-  text-decoration: none;
-  color: black;
-}
-
-.active {
-  font-weight: bold;
-}
-
-.logoimg {
-  max-width: 90%;
 }
 
 .hWrap {
   display: flex;
   flex-direction: row;
-  flex-basis: 100%;
   align-items: center;
-  justify-content: center;
 }
 
 .hBlock-1 {
@@ -168,9 +379,100 @@ a {
   flex-direction: column;
 }
 
-/* MAIN */
+/*//////////////////// MAIN \\\\\\\\\\\\\\\\\\\\ */
 
-/* Explore Site */
+/* Radio Button Trick inspired by burgermenu hack */
+
+.exploreMain input,
+.hdn {
+  display: none;
+}
+
+#t1:checked ~ #kids,
+#t2:checked ~ #teachers,
+#t3:checked ~ #researchers {
+  display: block;
+}
+
+.magic label {
+  opacity: 0.5;
+}
+
+input[type="radio"]:checked + label {
+  opacity: 1;
+}
+
+/* CONTAINERS */
+
+.welcomeStyling {
+  position: relative;
+}
+.homePromt {
+  display: flex;
+  min-height: 50px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/logoimg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+}
+
+.wmWrap {
+  position: absolute;
+  display: flex;
+  bottom: 5%;
+  left: 2%;
+  height: 20%;
+  width: 50%;
+}
+
+.cta,
+.wmWrap {
+  border-radius: 8px;
+}
+
+.homeSection,
+.homeContainer,
+.aboutMain,
+.aboutMain section,
+.newsMain,
+.newsMain section,
+.visitMain,
+.visitMain section,
+.exploreMain,
+.visitMain section,
+.formStyling,
+footer section,
+.hContainer,
+.thxMain,
+.thxFlex,
+.visGridWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wmWrap,
+.aboutMain section,
+.newsMain section,
+.visitMain section,
+.exploreMain,
+.visitMain,
+.exploreMain,
+.thxMain,
+.visGridWrapper,
+.formStyling,
+form {
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
 
 .magic {
   display: grid;
@@ -199,180 +501,6 @@ a {
   grid-column: 1/4;
 }
 
-.exploreMain input {
-  display: none;
-}
-
-.test {
-  display: none;
-}
-
-.magic label {
-  opacity: 0.5;
-  color: #449620;
-}
-
-#t1:checked ~ #kids,
-#t2:checked ~ #teachers,
-#t3:checked ~ #researchers {
-  display: block;
-}
-
-input[type="radio"]:checked + label {
-  opacity: 1;
-}
-
-/* Some other comment */
-.welcomeStyling {
-  position: relative;
-}
-
-.wmWrap {
-  position: absolute;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  bottom: 5%;
-  left: 2%;
-  height: 20%;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-}
-
-.imglob {
-  margin-bottom: 0;
-}
-
-.brain {
-  height: 10%;
-  width: 10%;
-}
-.wmWrap:hover {
-  background-color: black;
-}
-
-.welcomeMessage {
-  color: white;
-  padding: 1.5%;
-  font-size: 1.8vw;
-}
-
-.homePromt {
-  background-color: #224e6a;
-  height: 20%;
-  background-image: url(../images/logoimg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-origin: content-box;
-  padding: 1% 1%;
-  margin-top: -1%;
-}
-
-footer {
-  background-color: #224e6a;
-}
-
-.homePromt {
-  display: flex;
-  min-height: 50px;
-  position: relative;
-
-  justify-content: space-between;
-  align-items: center;
-}
-
-.CTA-1,
-.CTA-2 {
-  color: white;
-  font-size: 20px;
-  margin-left: 60px;
-  margin-right: 30px;
-  font-weight: bolder;
-}
-.homeSection,
-.homeContainer,
-.aboutMain,
-.aboutMain section,
-.newsMain,
-.newsMain section,
-.visitMain,
-.visitMain section,
-.exploreMain,
-.visitMain section,
-.formStyling,
-footer section,
-.hContainer,
-.thxMain,
-.thxFlex,
-.visGridWrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.homeSection,
-.homeSection img,
-.visitSection2,
-.aboutMain section p,
-.newsMain section p,
-.visitMain section p {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.homeSection {
-  width: 85%;
-  padding-bottom: 2rem;
-}
-
-.visitMain,
-.exploreMain,
-.thxMain,
-.visGridWrapper {
-  align-items: center;
-  justify-content: center;
-}
-.homeSection p,
-.homeSection h2 {
-  padding: 2vh;
-}
-
-.homeSection img {
-  margin-top: 3vh;
-}
-
-.homeSection h1 {
-  padding-top: 2vh;
-}
-
-.h1Dec {
-  margin-top: 10%;
-}
-
-.aboutMain section,
-.newsMain section,
-.visitMain section,
-.exploreMain {
-  justify-content: center;
-  align-items: center;
-}
-
-.visitMain section {
-  margin: 5% 0;
-}
-
-.aboutMain p,
-.newsMain p,
-.visitMain section,
-.visitMain p,
-.exploreMain section p {
-  width: 85%;
-}
-
-.exploreMain section p {
-  margin: auto;
-}
-
 .exploreSection1,
 .exploreSection2,
 .exploreSection3,
@@ -390,16 +518,6 @@ footer section,
 .exploreSection5 p {
   grid-column: 1 / 3;
   grid-row: 1/2;
-  padding: 10px;
-}
-
-.exploreMain h2 {
-  margin-bottom: 0;
-}
-
-.eximg,
-.eximg2 {
-  width: 90%;
 }
 
 .eximg {
@@ -413,74 +531,14 @@ footer section,
   grid-row: 2 / 3;
 }
 
-.h1Dec h1 {
-  margin: 0;
-  padding: 0;
-}
-
-.h1Dec .textDec {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-}
-
 .cta {
-  background-color: #449620;
   border: hidden;
-  border-radius: 8px;
   width: 160px;
   height: 35px;
-  margin: auto;
-  font-size: 1.2em;
-  margin-bottom: 2rem;
-}
-
-.cta:hover {
-  font-weight: bolder;
-}
-
-.cta a {
-  color: white;
-  margin: auto;
 }
 
 .hSecStyling {
-  background-color: rgba(68, 150, 32, 0.2);
   border-radius: 0px 0px 8px 8px;
-}
-
-.aboutSection2,
-.aboutSection3,
-.newsMain section,
-.visitSection1,
-.visitSection4,
-.exploreSection1,
-.exploreSection2,
-.exploreSection3,
-.exploreSection4,
-.exploreSection5,
-.thxSection {
-  background-color: rgba(68, 150, 32, 0.2);
-  padding-bottom: 5%;
-}
-
-.formStyling {
-  width: 60%;
-  align-items: center;
-  justify-content: center;
-}
-
-.formStyling button {
-  margin-top: 20px;
-}
-
-form {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
-  width: 80%;
-  justify-content: center;
-  padding: 30px;
 }
 
 label {
@@ -495,40 +553,7 @@ form button {
   grid-column: 2 / 3;
 }
 
-.visitSection4 {
-  padding-top: 20px;
-}
-
-.aboutSection2 img,
-.aboutSection3 img,
-.visitMain img {
-  width: 75%;
-}
-
-.newsSection1 img,
-.newsSection2 img,
-.newsSection3 img {
-  width: 85%;
-}
-
-.textBlock {
-  margin: 0 auto;
-}
-
-table {
-  margin: auto;
-}
-
-.ai1 {
-  margin-top: 20px;
-}
-
-.ai2,
-.ai3 {
-  margin-top: 80px;
-}
-
-/*Footer*/
+/*//////////////////// FOOTER \\\\\\\\\\\\\\\\\\\\ */
 
 .footerContainer {
   position: relative;
@@ -538,21 +563,6 @@ table {
   padding-top: 10px;
   margin-top: 50px;
   bottom: 0px;
-}
-
-.copy {
-  padding: 0;
-  margin: 0;
-  padding-bottom: 15px;
-  padding-top: 5px;
-}
-footer h2 {
-  padding-bottom: 1vh;
-}
-
-footer section,
-footer p {
-  font-size: 1.8vw;
 }
 
 .ftTable,
@@ -565,10 +575,6 @@ footer section {
   width: 30%;
   align-items: center;
 }
-footer p {
-  padding: 0;
-  margin: 0;
-}
 
 .sMediaIcons {
   display: flex;
@@ -577,25 +583,15 @@ footer p {
   height: 90%;
 }
 
-.sMediaIcons img {
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 @media only screen and (max-width: 768px) {
   .hList li {
     border-bottom: 1px solid black;
-    padding: 0.5vh;
+    padding: 5px;
   }
 
   iframe {
     width: 65vw;
     height: 65vw;
-  }
-
-  .newsMain section {
-    padding-top: 5%;
   }
 }
 
@@ -610,39 +606,34 @@ footer p {
 /* TABLET STYLING*/
 
 @media only screen and (min-width: 768px) {
+  /*Header*/
   #navMen ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 1vh;
+    margin-bottom: 10px;
   }
 
   header .fa-bars {
     display: none;
   }
 
+  .formStyling {
+    width: 100%;
+  }
+
+  form {
+    width: 50%;
+  }
+
   nav a {
     font-size: 2vw;
   }
-
-  .CTA-1,
-  .CTA-2 {
-    font-size: 2.2vw;
-  }
-
-  /*
-  .visitSection4 {
-    background-color: white;
-  }
-
-  .visGridWrapper p {
-    background-color: rgba(68, 150, 32, 0.2);
-  } */
+  /*Main*/
 
   .aboutMain section,
   .hGrid1,
   .hGrid2,
-  .newsMain section,
   .visitMain,
   .visGridWrapper,
   .vgw2 {
@@ -657,7 +648,6 @@ footer p {
   .visitMain,
   .hGrid2,
   .aboutMain section,
-  .newsMain section,
   .visGridWrapper,
   .vgw2 {
     grid-template-columns: 1fr 1fr;
@@ -761,22 +751,16 @@ footer p {
     grid-column: 2;
   }
 
-  .homeVR,
   .hGrid1,
   .exploreMain section {
     width: 70%;
-  }
-
-  .homeContainer h1 {
-    font-size: 1.6rem;
   }
 
   .h1Dec {
     width: 80%;
   }
 
-  .aboutMain section,
-  .newsMain section {
+  .aboutMain section {
     padding-bottom: 0px;
   }
 
@@ -796,10 +780,7 @@ footer p {
   .aboutSection3 p {
     grid-column: 2/3;
   }
-  .aboutMain section p,
-  .newsMain section p {
-    font-size: 1.5vw;
-  }
+
   .aboutSection2 img,
   .aboutSection3 img {
     grid-column: 1/2;
@@ -807,14 +788,8 @@ footer p {
     width: 100%;
   }
 
-  .newsSection img {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-
-  .newsSection p {
-    grid-column: 3/4;
-    grid-row: 1/2;
+  .aboutMain section {
+    border-radius: 0 8px 8px 0;
   }
 
   .formStyling {
@@ -824,6 +799,7 @@ footer p {
 
 /*DESKTOP STYLING*/
 @media only screen and (min-width: 1400px) {
+  /*Header*/
   .hContainer {
     display: flex;
     flex-direction: row;
@@ -852,20 +828,46 @@ footer p {
     justify-content: space-evenly;
   }
 
+  /*Main*/
+
+  .newsMain section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .newsMain section {
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  .newsMain section {
+    padding-bottom: 0px;
+  }
+
+  .newsMain section {
+    border-radius: 0 8px 8px 0;
+  }
+  .newsSection img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .newsSection p {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
   .h1Dec {
     width: 40%;
   }
 
+  iframe {
+    height: 600px;
+  }
+
+  /*Footer*/
+
   footer section,
   footer p {
     font-size: 1.2vw;
-  }
-
-  .aboutMain section p {
-    font-size: 1.2vw;
-  }
-
-  .homeContainer h1 {
-    font-size: 2.4rem;
   }
 }
