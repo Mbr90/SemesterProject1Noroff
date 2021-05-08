@@ -584,7 +584,7 @@ footer section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 60%;
+  height: 90%;
 }
 
 /* Small screen specific styling */
