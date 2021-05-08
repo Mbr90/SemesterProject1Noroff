@@ -690,7 +690,7 @@ footer section {
     align-self: flex-start;
   }
 
-  .hg1-1,
+  .hg2-6 .hg1-1,
   .hg1-4,
   .hg1-8,
   .visitSection1,
@@ -699,6 +699,15 @@ footer section {
   .visitSection4,
   .visGridWrapper img {
     justify-self: center;
+  }
+
+  .hg2-6 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #ttm {
+    align-self: flex-end;
   }
 
   .hg1-1,
