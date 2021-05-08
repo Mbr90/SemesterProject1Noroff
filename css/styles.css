@@ -899,6 +899,30 @@ footer section {
     width: 600px;
   }
 
+  /* Transformation */
+
+  .transitionWrapper {
+    overflow: hidden;
+  }
+
+  .hg2-5,
+  .hg2-2 {
+    transition: transform 2s, visibility 0.25s ease-in;
+  }
+
+  .hg2-2 {
+    transform-origin: top left;
+  }
+
+  .hg2-5 {
+    transform-origin: center;
+  }
+
+  .hg2-5:hover,
+  .hg2-2:hover {
+    transform: scale(1.5);
+  }
+
   /*Footer*/
 
   footer section,
