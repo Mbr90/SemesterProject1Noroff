@@ -426,7 +426,7 @@ footer section,
 
 .cta {
   background-color: #449620;
-  border-color: #449620;
+  border: hidden;
   border-radius: 8px;
   width: 160px;
   height: 35px;
