@@ -62,12 +62,14 @@ h1 {
   font-size: 2em;
 }
 
-h2 {
+h2,
+.magic label {
   font-size: 1.25em;
 }
 
 h1,
-h2 {
+h2,
+.magic label {
   font-weight: 600;
 }
 .CTA-1,
@@ -265,7 +267,8 @@ main .h1Dec {
 main section,
 .iconImg,
 .homeVR,
-.formStyling button {
+.formStyling button,
+.magic {
   margin-top: 20px;
 }
 
@@ -840,6 +843,7 @@ footer section {
   .newsMain section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 85%;
   }
 
   .newsMain section {
