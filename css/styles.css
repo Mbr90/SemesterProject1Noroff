@@ -686,6 +686,10 @@ footer section {
     margin-right: auto;
   }
 
+  .visGc2 {
+    align-self: flex-start;
+  }
+
   .hg1-1,
   .hg1-4,
   .hg1-8,
