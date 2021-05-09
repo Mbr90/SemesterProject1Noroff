@@ -73,7 +73,8 @@ h2,
   font-weight: 600;
 }
 .CTA-1,
-.CTA-2 {
+.CTA-2,
+.cta {
   font-size: 20px;
 }
 
@@ -81,10 +82,6 @@ footer section,
 footer p,
 .welcomeMessage {
   font-size: 1.8vw;
-}
-
-.cta {
-  font-size: 20px;
 }
 
 .active {
@@ -225,7 +222,9 @@ ul {
 }
 
 .h1Dec .textDec,
-.h1Dec h1 {
+.h1Dec h1,
+.copy,
+footer p {
   margin: 0;
   padding: 0;
 }
@@ -258,8 +257,12 @@ table {
 }
 
 .homePromt {
-  padding: 10px 10px;
   margin-top: -5px;
+}
+
+.homePromt,
+p {
+  padding: 10px;
 }
 
 main .h1Dec {
@@ -288,10 +291,6 @@ main section {
   padding-bottom: 20px;
 }
 
-p {
-  padding: 10px;
-}
-
 .textBlock {
   margin: 0 auto;
 }
@@ -301,16 +300,10 @@ footer h2 {
 }
 
 .copy {
-  padding: 0;
-  margin: 0;
   padding-bottom: 15px;
   padding-top: 5px;
 }
 
-footer p {
-  padding: 0;
-  margin: 0;
-}
 .sMediaIcons img {
   padding-top: 10px;
   padding-left: 5px;
