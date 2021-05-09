@@ -186,20 +186,20 @@ iframe {
 }
 
 h1,
-h2,
 .magic label {
   color: #449620;
 }
 
 ul,
 a,
-p {
+p,
+h2,
+.cta a {
   color: black;
 }
 
 .CTA-1,
 .CTA-2,
-.cta a,
 .welcomeMessage {
   color: white;
 }
