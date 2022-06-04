@@ -5,14 +5,8 @@
 A mock site for a non-existing community science museum
 
 ## Description
-
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+This site is the result of Semester Project 1 of the Front-end developers course at Noroff school of technology and digital media. 
+An interactive science museum wants a website that is informative and appealing, that will attract both children and their parents. This site is my take on how to design something like that given my abilites at the time of the project. We were given media assets to choose from, and had to take into account WCAG, SEA and content management.
 
 ## Built With
 
